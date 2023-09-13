@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+.calculator{
+    width: 100%;
+    min-height: 75vh;    
+    background-color: rgba(41, 42, 44, 0.688);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 400px;
+    margin: 30px auto;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 8px ;
+    word-break: break-all;
+    word-wrap: break-word;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+input{
+    background: transparent ;
+    grid-column: 1 / 5;
+    color: #fff ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding: 8px;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 4px;
+}
+button{
+    font-size: 20px;
+    border: none;
+    color: black;
+    background-color: rgba(113, 115, 119, 0.5);
+    box-shadow: 2px 2px 2px #999999;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+.calculator button:last-child{
+    grid-column: span 2;
+} 
+
+#operator{
+    border-radius: 8px;
+    color: black;
+    background-color: #ff7300;
+}
+#button_del{
+    color: black;
+    border-radius: 8px;
+    background-color: #ff7300;
+}
+.calculator button:hover{
+    background-color: whitesmoke;
+}
+.calculator #operator:hover{
+    background-color: #609cc2;
+}
+.calculator #button_del:hover{
+    background-color: #609cc2;
+}
